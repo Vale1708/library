@@ -160,7 +160,7 @@ a:active{
     background-color: transparent;
 }
 
-.sidebar-container{
+.sidebar {
     background-color: #ffffff;
     grid-area: sidebar;
     display: flex;
@@ -234,13 +234,14 @@ li{
     margin-left: 1rem;
 }
 
-.main-container{
+.main{
     display: block;
     background-color: #f3f4f6;
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
+    grid-template-areas: "library";
     gap: 1.5rem;
     padding: 1.5rem;
 }
@@ -250,6 +251,9 @@ li{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
     background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    gap: 1rem;
 }
 
 .main-card:hover{
@@ -257,7 +261,7 @@ li{
 }
 
 .library{
-    grid-area: recommended;
+    grid-area: library;
     display: grid;
     grid-template-rows: auto 1fr;
 }
@@ -284,6 +288,13 @@ li{
     min-width: 120px;
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
+}
+
+#add-book-button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
 }
 
 .card-container{
@@ -330,5 +341,22 @@ li{
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.small-button{
+    min-width: 110px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+}
+
+.remove-button{
+    border: 1px solid #ff3f56;
+    background-color: #ffffff;
+    color: #ff3f56;
+}
+
+.remove-button:hover{
+    color: #ffffff;
+    background-color: #e0354a;
 }
 
