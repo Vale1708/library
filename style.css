@@ -1,12 +1,58 @@
+html{
+    line-height: 1.15
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+h1{
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+img{
+    border-style: none;
+}
+
 body {
+    margin: 0;
     font-family: "robotoregular", sans-serif;;
     color: #0e1217;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input{
+    overflow: visible;
+}
+
+button,
+select{
+    text-transform: none;
+}
+
+textarea{
+    overflow: auto;
+}
+
+details{
+    display: block;
+}
+
+[hidden]{
+    display: none;
 }
 
 input {
@@ -111,6 +157,7 @@ a:hover,
 a:active{
     text-decoration: none;
     color: inherit;
+    background-color: transparent;
 }
 
 .sidebar-container{
@@ -187,7 +234,8 @@ li{
     margin-left: 1rem;
 }
 
-.main {
+.main-container{
+    display: block;
     background-color: #f3f4f6;
     grid-area: main;
     display: grid;
