@@ -241,7 +241,7 @@ li{
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "library";
+    grid-template-areas: "library" "popular";
     gap: 1.5rem;
     padding: 1.5rem;
 }
@@ -360,3 +360,64 @@ li{
     background-color: #e0354a;
 }
 
+.popular-container{
+    display: flex;
+    grid-area: flex;
+    flex-direction: column;
+}
+
+.popular-item{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "book-cover details"
+        "book-cover favorite";
+}
+
+.popular-item .book-cover{
+    grid-area: "book-cover";
+    margin-right: 1rem;
+}
+
+.popular-details{
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.favorite{
+    grid-area: favorite;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.favorite img{
+    width: 25%;
+    margin-top: -5px;
+}
+
+.ranking-number {
+    font-weight: 700;
+    background-color: #f3f4f6;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.popular-item:hover .ranking-number{
+    color: #ac1de4;
+}
+
+.top-rank{
+    background-color: #e3c0f6;
+    color: #ac1de4;
+}
+
+details{
+    display: block;
+}
