@@ -75,6 +75,7 @@ a:active{
     display: flex;
     align-items: center;
     gap:1rem;
+    font-size: 1.25rem;
 }
 
 li{
@@ -86,8 +87,8 @@ li{
     place-items: center;
     background-color: #fef4f6;
     border-radius: 8px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     transition: background-color ease 0.3s;
 }
 
