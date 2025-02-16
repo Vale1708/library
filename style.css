@@ -113,3 +113,15 @@ li{
 .logo-icon, .menu-icon{
     margin-left: 1rem;
 }
+
+.github-logo {
+    margin-top: auto; 
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+  
+.github-logo-icon {
+    width: 80px;
+    height: auto;
+}
