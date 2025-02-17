@@ -63,6 +63,7 @@ a:active{
     width: min(15%, 80px);
     min-width: 40px;
     height: auto;
+    fill: white;
 }
 
 .menu{
@@ -132,4 +133,19 @@ li{
     width: 80px;
     height: auto;
     fill: white;
+}
+
+.icon-svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.icon-svg.active{
+    fill: #089BAB;
+}
+
+.menu-item:hover .icon-svg{
+    fill:#089BAB;
 }
