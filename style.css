@@ -149,3 +149,55 @@ li{
 .menu-item:hover .icon-svg{
     fill:#089BAB;
 }
+
+/* Header */
+.header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.search-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max(25%, 250px);
+}
+
+.searchbar{
+    height: 3rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.searchbar:focus{
+    outline: none;
+    border: 2px solid #525866;
+}
+
+.searchbar::placeholder{
+    color: #525866;
+}
+
+input{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    border: none;
+}
+
+.search-icon{
+    position: absolute;
+    left: 10px;
+}
