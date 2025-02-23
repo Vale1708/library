@@ -201,3 +201,29 @@ input{
     position: absolute;
     left: 10px;
 }
+
+button{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    fill: #089BAB;
+    text-align: center;
+}
+
+.header button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f3f4f6;
+}
+
+.header-buttons-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
